@@ -20,15 +20,16 @@ print(factorial)
 
 #3 write a function which takes an array of numbers as an input and finds the lowest value. Return the index of that element and its value (1p)
 
-array = list()
-print('Enter numbers in array. When you are finished, enter "n": ')
+array = [14, 1, 3, 4, 5, 1, 2, 1]
 
-while True:
-    num = input("number :")
-    if num == 'n':
-        break
-    array.append(int(num))
 
-array.sort()
+def my_function(arr):
+    min_value = min(arr)
 
-print('The lowest value in an array: ', array[0])
+    print('The lowest value in the array:', min_value, 'and the index is:',)
+    for i in range(len(arr)):
+        if arr[i] == min_value:
+            print(i)
+
+
+my_function(array)
